@@ -1,0 +1,196 @@
+.race_arena {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.info_place {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    .button_config {
+        width: 50%;
+        height: 25vh;
+        padding: 1vw;
+        @media screen and (max-width: 1100px){
+            width: 70%;
+        }
+        @media screen and (max-width: 600px){
+            width: 80%;
+        }
+    }
+    .winner_info {
+        width: 10%;
+        margin: 0 auto;
+        text-align: center;
+        .winner_img_info img{
+            width: 100%;
+        }
+        .winner_name_info {
+            width: 100%;
+            color: aliceblue;
+        }
+        .winner_res_info {
+            width: 100%;
+            color: aliceblue;
+        }
+    }
+}
+.btn_race,
+.btn_reset,
+.btn_generate {
+    width: 30%;
+    height: 25%;
+    margin: 0;
+    font-size: 1.3rem;
+}
+button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.create_car_form,
+.change_car_form {
+    width: 100%;
+    height: 20%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.create_car_name,
+.change_car_name {
+    width: 60%;
+    height: 100%;
+    border: solid 1px rgb(248, 240, 240);
+    font-size: 2rem;
+}
+.create_car_color,
+.change_car_color {
+    width: 10%;
+    height: 100%;
+    margin: 0 10px;
+}
+.create_car_btn,
+.change_car_btn {
+    width: 20%;
+    height: 100%;
+    font-size: 1.3rem;
+    &:hover{
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: antiquewhite;
+    }
+}
+.cars_counter {
+    font-size: 2rem;
+}
+.page_number {
+    font-size: 1.7rem;
+}
+.race_place {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    width: 100%;
+    height: 80%;
+}
+.car_track {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 1px 0;
+}
+.track_config {
+    width: 40%;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    p {
+        font-size: 1.3rem;
+        margin: 0 10px;
+        color: ivory;
+    }
+    .select_car,
+    .remove_car {
+        width: 20%;
+        height: 100%;
+        margin-right: 5px;
+        font-size: .9rem;
+    }
+}
+.track_active {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    .track_road {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .car_svg {
+            position: relative;
+            width: 80px;
+            height: 70px;
+        }
+        .finish {
+            width: 60px;
+            height: 70px;
+            margin-right: 5%;
+        }
+    }
+}
+.engine_panel {
+    width: 9%;
+    height: 80%;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .start_engine,
+    .start_car {
+        width: 100%;
+        height: 45%;
+        margin: 0 auto;
+        border: solid 1px red;
+        font-size: .7rem;
+    }
+}
+hr {
+    border: dashed 1px red;
+}
+.pagination {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.btn_prev_pagin,
+.btn_next_pagin {
+    width: 30%;
+    border: solid 1px red;
+    font-size: .7rem;
+    padding: 3px;
+    @media screen and (max-width: 600px){
+        font-size: 1.2rem;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+.valid_error {
+    border: solid 2px red;
+    background-color: rgb(204, 246, 246);
+}
+.inactive_track {
+    visibility: hidden;
+}
+.stop{
+    background-color: red;
+}
